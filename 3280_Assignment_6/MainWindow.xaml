@@ -1,0 +1,87 @@
+﻿<Window x:Class="_3280_Assignment_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3280_Assignment_6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid Margin="0,0,-6.4,-20">
+		<GroupBox x:Name="info_box" Header="Passenger Information" HorizontalAlignment="Left" Height="134" Margin="504,17,0,0" VerticalAlignment="Top" Width="277" RenderTransformOrigin="0.5,0.5">
+			<GroupBox.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform Angle="-0.215" />
+					<TranslateTransform />
+				</TransformGroup>
+			</GroupBox.RenderTransform>
+			<ComboBox x:Name="choose_pass_cbox" HorizontalAlignment="Left" Margin="133,43,0,0" VerticalAlignment="Top" Width="120" />
+		</GroupBox>
+		<Label x:Name="choose_pass_label" Content="Choose Passenger" HorizontalAlignment="Left" Margin="523,71,0,0" VerticalAlignment="Top" />
+		<Label x:Name="pass_seat_lbl" Content="Passenger's Seat" HorizontalAlignment="Left" Margin="529,102,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.441" />
+		<ComboBox x:Name="choose_flight_cbox" HorizontalAlignment="Left" Margin="645,43,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="choose_flight_cbox_SelectionChanged" />
+		<Label x:Name="choose_flight_lbl" Content="Choose Flight" HorizontalAlignment="Left" Margin="523,40,0,0" VerticalAlignment="Top" />
+		<Label x:Name="pass_seat_fill" Content="" HorizontalAlignment="Left" Margin="645,102,0,0" VerticalAlignment="Top" />
+		<Button x:Name="change_seat_btn" Content="Change Seat" HorizontalAlignment="Left" Margin="508,163,0,0" VerticalAlignment="Top" Width="98" />
+		<Button x:Name="add_pass_btn" Content="Add Passenger" HorizontalAlignment="Left" Margin="508,200,0,0" VerticalAlignment="Top" Width="98" />
+		<Button x:Name="delete_pass_btn" Content="Delete Passenger" HorizontalAlignment="Left" Margin="645,200,0,0" VerticalAlignment="Top" Width="98" />
+		<GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="159" Margin="508,235,0,0" VerticalAlignment="Top" Width="248">
+			<Rectangle x:Name="red_rect" Fill="Red" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="37" />
+		</GroupBox>
+		<Rectangle x:Name="blue_rect" Fill="Blue" HorizontalAlignment="Left" Height="36" Margin="523,301,0,0" Stroke="Black" VerticalAlignment="Top" Width="39" />
+		<Rectangle x:Name="green_rect" Fill="MediumSeaGreen" HorizontalAlignment="Left" Height="36" Margin="523,342,0,0" Stroke="Black" VerticalAlignment="Top" Width="39" />
+		<Label x:Name="red_rect_lbl" Content="Seat is taken" HorizontalAlignment="Left" Margin="584,270,0,0" VerticalAlignment="Top" />
+		<Label x:Name="blue_rect_lbl" Content="Seat is empty" HorizontalAlignment="Left" Margin="584,311,0,0" VerticalAlignment="Top" />
+		<Label x:Name="green_rect_lbl" Content="Selected Passenger's Seat" HorizontalAlignment="Left" Margin="584,352,0,0" VerticalAlignment="Top" />
+		<Canvas x:Name="airbus_cvs" HorizontalAlignment="Left" Height="274" Margin="34,40,0,0" VerticalAlignment="Top" Width="420" Background="#FFD09595" Visibility="Visible">
+			<Label x:Name="air_name_lbl" Content="A380" Canvas.Left="190" Canvas.Top="32" FontSize="16" />
+			<Label x:Name="ab_seat_1" Content="1" Canvas.Left="57" Canvas.Top="68" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_2" Content="2" Canvas.Left="136" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_3" Content="3" Canvas.Left="241" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_4" Content="4" Canvas.Left="319" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_1_Copy3" Content="" Canvas.Left="57" Canvas.Top="106" Background="#FF000004" Foreground="White" FontSize="16" Width="318" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="9" />
+			<Label x:Name="ab_seat_5" Content="5" Canvas.Left="57" Canvas.Top="119" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_9" Content="9" Canvas.Left="57" Canvas.Top="156" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_13" Content="13" Canvas.Left="57" Canvas.Top="193" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_6" Content="6" Canvas.Left="136" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_10" Content="10" Canvas.Left="136" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_14" Content="14" Canvas.Left="136" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_7" Content="7" Canvas.Left="241" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_11" Content="11" Canvas.Left="241" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_15" Content="15" Canvas.Left="241" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_8" Content="8" Canvas.Left="319" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_12" Content="12" Canvas.Left="319" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_16" Content="16" Canvas.Left="319" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+		</Canvas>
+		<Canvas x:Name="boeing_cvs" HorizontalAlignment="Left" Height="338" Margin="34,40,0,0" VerticalAlignment="Top" Width="429" Background="#FF95D0CB" Visibility="Hidden">
+			<Label x:Name="boeing_name_lbl" Content="767" Canvas.Left="190" Canvas.Top="32" FontSize="16" />
+			<Label x:Name="bg_seat_1" Content="1" Canvas.Left="57" Canvas.Top="68" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_2" Content="2" Canvas.Left="136" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_3" Content="3" Canvas.Left="241" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_4" Content="4" Canvas.Left="319" Canvas.Top="69" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="ab_seat_1_Copy1" Content="" Canvas.Left="57" Canvas.Top="106" Background="#FF000004" Foreground="White" FontSize="16" Width="318" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="9" />
+			<Label x:Name="bg_seat_5" Content="5" Canvas.Left="57" Canvas.Top="119" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_9" Content="9" Canvas.Left="57" Canvas.Top="156" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_13" Content="13" Canvas.Left="57" Canvas.Top="193" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_6" Content="6" Canvas.Left="136" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_10" Content="10" Canvas.Left="136" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_14" Content="14" Canvas.Left="136" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_7" Content="7" Canvas.Left="241" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_11" Content="11" Canvas.Left="241" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_15" Content="15" Canvas.Left="241" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_8" Content="8" Canvas.Left="319" Canvas.Top="120" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_12" Content="12" Canvas.Left="319" Canvas.Top="157" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_16" Content="16" Canvas.Left="319" Canvas.Top="194" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_17" Content="17" Canvas.Left="57" Canvas.Top="230" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_21" Content="21" Canvas.Left="57" Canvas.Top="267" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_18" Content="18" Canvas.Left="136" Canvas.Top="231" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_22" Content="22" Canvas.Left="136" Canvas.Top="268" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_19" Content="19" Canvas.Left="241" Canvas.Top="231" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_23" Content="23" Canvas.Left="241" Canvas.Top="268" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_20" Content="20" Canvas.Left="319" Canvas.Top="231" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+			<Label x:Name="bg_seat_24" Content="24" Canvas.Left="319" Canvas.Top="268" Background="Blue" Foreground="White" FontSize="16" Width="56" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+		</Canvas>
+		<TextBox x:Name="test_txt" HorizontalAlignment="Left" Height="93" Margin="356,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="132" />
+	</Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="_3280_Assignment_6.Boeing"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:_3280_Assignment_6"
+             mc:Ignorable="d" Width="359.333" Height="332.749">
+    <Grid x:Name="seat_1_lbl" Margin="0,10,0.2,-0.2" Background="#FFF3E1E1">
+        <Label x:Name="boeing_name_lbl" Content="767" HorizontalAlignment="Left" Margin="159,21,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="-0.002,-0.271" />
+        <Label x:Name="seat_1_lbl1" Content="1" HorizontalAlignment="Left" Margin="27,58,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_2_lbl" Content="2" HorizontalAlignment="Left" Margin="101,58,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_3_lbl" Content="3" HorizontalAlignment="Left" Margin="194,58,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_4_lbl" Content="4" HorizontalAlignment="Left" Margin="266,58,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label Content="" HorizontalAlignment="Left" Margin="27,95,0,0" VerticalAlignment="Top" Background="#E5000000" FontSize="24" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="297" Height="6" />
+        <Label x:Name="seat_5_lbl" Content="5" HorizontalAlignment="Left" Margin="27,106,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_6_lbl" Content="6" HorizontalAlignment="Left" Margin="101,106,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_7_lbl" Content="7" HorizontalAlignment="Left" Margin="194,106,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_8_lbl" Content="8" HorizontalAlignment="Left" Margin="266,106,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_9_lbl1" Content="9" HorizontalAlignment="Left" Margin="27,143,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_13_lbl" Content="13" HorizontalAlignment="Left" Margin="27,180,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_10_lbl" Content="10" HorizontalAlignment="Left" Margin="101,143,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_14_lbl" Content="14" HorizontalAlignment="Left" Margin="101,180,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_11_lbl" Content="11" HorizontalAlignment="Left" Margin="194,143,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_15_lbl" Content="15" HorizontalAlignment="Left" Margin="194,180,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_12_lbl" Content="12" HorizontalAlignment="Left" Margin="266,143,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_16_lbl" Content="16" HorizontalAlignment="Left" Margin="266,180,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_21_lbl" Content="21" HorizontalAlignment="Left" Margin="27,254,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_17_lbl" Content="17" HorizontalAlignment="Left" Margin="27,217,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_18_lbl" Content="18" HorizontalAlignment="Left" Margin="101,217,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_22_lbl" Content="22" HorizontalAlignment="Left" Margin="101,254,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_19_lbl" Content="19" HorizontalAlignment="Left" Margin="194,217,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_23_lbl" Content="23" HorizontalAlignment="Left" Margin="194,254,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_20_lbl" Content="20" HorizontalAlignment="Left" Margin="266,217,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+        <Label x:Name="seat_24_lbl" Content="24" HorizontalAlignment="Left" Margin="266,254,0,0" VerticalAlignment="Top" Background="#E50000FF" FontSize="16" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="58" />
+    </Grid>
+</UserControl>
